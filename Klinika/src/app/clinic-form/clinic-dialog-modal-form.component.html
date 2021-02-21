@@ -1,0 +1,57 @@
+<mat-toolbar mat-dialog-title color="primary">
+	<mat-toolbar-row>
+		<div>Zgłoszenie wizyty</div>
+		<span fxFlex="1 1 auto"></span>
+		<button mat-icon-button color="accent" matDialogClose>
+			<mat-icon>close</mat-icon>
+		</button>
+	</mat-toolbar-row>
+</mat-toolbar>
+<form [formGroup]="visitForm" (submit)="submit()" class="grid-container">
+	<mat-form-field class="visit-type">
+		<mat-label>Typ wizyty</mat-label>
+		<mat-select formControlName="visitType" required [(ngModel)]="clinicVisit.visitType">
+			<mat-option *ngFor="let visitType of clinic.visitTypes" [value]="visitType">{{visitType}}</mat-option>
+		</mat-select>
+	</mat-form-field>
+
+	<mat-form-field class="name">
+		<mat-label>Imie</mat-label>
+		<input matInput required formControlName="name" placeholder="Jan" [(ngModel)]="clinicVisit.name">
+	</mat-form-field>
+
+	<mat-form-field class="surname">
+		<mat-label>Nazwisko</mat-label>
+		<input matInput required formControlName="surname" placeholder="Kowalski" [(ngModel)]="clinicVisit.surname">
+	</mat-form-field>
+
+	<mat-form-field class="animal">
+		<mat-label>Zwierze</mat-label>
+		<input required matInput formControlName="animal" placeholder="Albinotyczny zółw miękkoskorupkowy"
+			   [(ngModel)]="clinicVisit.animal">
+	</mat-form-field>
+
+	<mat-form-field class="number">
+		<mat-label>Numer</mat-label>
+		<input matInput formControlName="number" placeholder="+48 555 555 555" [(ngModel)]="clinicVisit.number"
+			   [textMask]="{mask: phoneMask, placeholderChar: '_'}">
+	</mat-form-field>
+
+	<mat-form-field class="email">
+		<mat-label>E-mail</mat-label>
+		<input matInput formControlName="email" placeholder="example@email.com" [(ngModel)]="clinicVisit.email">
+	</mat-form-field>
+
+	<div class="confirmation">
+		<mat-checkbox formControlName="acceptTerms" id="acceptTerms" color="primary" #ts>Wyrażam zgodnę na
+			przekazanie
+			moich danych osobowych do podmiotu, do którego
+			zapisuje się na
+			wyzytę, w celu realizacji zamówienia wizyty.
+		</mat-checkbox>
+	</div>
+
+	<div class="button" fxLayout="row" fxLayoutAlign="center">
+		<button cdkFocusInitial mat-raised-button type="submit">Wyślij zgłoszenie</button>
+	</div>
+</form>

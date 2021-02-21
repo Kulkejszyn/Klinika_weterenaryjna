@@ -1,0 +1,61 @@
+.mat.mat-dialog-title {
+	margin: 0;
+}
+
+.grid-container {
+	height: 60vh;
+	width: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	gap: 5% 5%;
+	grid-template-areas:
+    "visit-type visit-type"
+    "name surname"
+    "animal animal"
+    "number email"
+    "confirmation confirmation"
+    "button button";
+	padding: 5%;
+}
+
+.visit-type {
+	grid-area: visit-type;
+}
+
+.name {
+	grid-area: name;
+}
+
+.surname {
+	grid-area: surname;
+}
+
+.animal {
+	grid-area: animal;
+}
+
+.number {
+	grid-area: number;
+}
+
+.email {
+	grid-area: email;
+}
+
+.confirmation {
+	grid-area: confirmation;
+}
+
+.button {
+	grid-area: button;
+}
+
+::ng-deep .mat-checkbox-layout {
+	white-space: normal !important;
+}
+
+::ng-deep .mat-checkbox-inner-container {
+	margin-top: 3px !important;
+}
+

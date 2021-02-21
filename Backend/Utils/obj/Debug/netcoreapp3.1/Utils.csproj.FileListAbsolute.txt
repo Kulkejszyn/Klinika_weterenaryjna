@@ -1,0 +1,9 @@
+C:\Users\Kulkejszyn\Downloads\Angular\Backend\Utils\bin\Debug\netcoreapp3.1\Utils.deps.json
+C:\Users\Kulkejszyn\Downloads\Angular\Backend\Utils\bin\Debug\netcoreapp3.1\Utils.dll
+C:\Users\Kulkejszyn\Downloads\Angular\Backend\Utils\bin\Debug\netcoreapp3.1\Utils.pdb
+C:\Users\Kulkejszyn\Downloads\Angular\Backend\Utils\obj\Debug\netcoreapp3.1\Utils.csprojAssemblyReference.cache
+C:\Users\Kulkejszyn\Downloads\Angular\Backend\Utils\obj\Debug\netcoreapp3.1\Utils.AssemblyInfoInputs.cache
+C:\Users\Kulkejszyn\Downloads\Angular\Backend\Utils\obj\Debug\netcoreapp3.1\Utils.AssemblyInfo.cs
+C:\Users\Kulkejszyn\Downloads\Angular\Backend\Utils\obj\Debug\netcoreapp3.1\Utils.csproj.CoreCompileInputs.cache
+C:\Users\Kulkejszyn\Downloads\Angular\Backend\Utils\obj\Debug\netcoreapp3.1\Utils.dll
+C:\Users\Kulkejszyn\Downloads\Angular\Backend\Utils\obj\Debug\netcoreapp3.1\Utils.pdb
